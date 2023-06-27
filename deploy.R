@@ -13,8 +13,12 @@ error_on_missing_name <- function(name) {
 
 # Authenticate
 rsconnect::setAccountInfo(name = error_on_missing_name("SHINY_ACC_NAME"),
-               token = error_on_missing_name("TOKEN"),
-               secret = error_on_missing_name("SECRET"))
+               token = error_on_missing_name("AD0BBA3BCE373F69750D8230A9EB725F"),
+               secret = error_on_missing_name("pThl9VZJg1nuKeyxB68VKfNvk1IqhjiO3ySMFp/d"))
+
+#SHINY_ACC_NAME
+#TOKEN
+#SECRET
 
 # Deploy
 rsconnect::deployApp(appFiles = c("app.R", "data.xlsx"))
