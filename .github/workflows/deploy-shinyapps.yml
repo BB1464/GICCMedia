@@ -37,4 +37,4 @@ jobs:
           -e SHINY_ACC_NAME=${{ secrets.SHINY_ACC_NAME }}
           -e TOKEN=${{secrets.TOKEN}}
           -e SECRET=${{secrets.SECRET}}
-          main
+          master
