@@ -12,7 +12,7 @@ error_on_missing_name <- function(name) {
 }
 
 # Authenticate
-rsconnect::setAccountInfo(name = error_on_missing_name("SHINY_ACC_NAME"),
+rsconnect::setAccountInfo(name = error_on_missing_name("oluwafemioyedele"),
                token = error_on_missing_name("AD0BBA3BCE373F69750D8230A9EB725F"),
                secret = error_on_missing_name("pThl9VZJg1nuKeyxB68VKfNvk1IqhjiO3ySMFp/d"))
 
