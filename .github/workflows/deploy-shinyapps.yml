@@ -29,7 +29,7 @@ jobs:
 
       # build the docker image and give it the name main
       - name: Build image
-        run: docker build -t main .
+        run: docker build -t master .
       # run the docker image supply the secrets from the github secrets store.
       - name: execute
         run: >
