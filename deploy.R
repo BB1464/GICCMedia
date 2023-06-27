@@ -18,6 +18,7 @@ rsconnect::setAccountInfo(name = error_on_missing_name("SHINY_ACC_NAME"),
                secret = error_on_missing_name("SECRET"))
 
 
+
 # Deploy
 rsconnect::deployApp(appFiles = c("app.R", "data.xlsx"))
 
