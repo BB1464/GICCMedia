@@ -6,7 +6,8 @@ on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
     branches: [ master ]
-
+env:
+  BOLT_SSH_KEY: ${{ secrets.OLUWAFEMI_OYEDELE}}
   workflow_run:
     workflows: ["Update data"]
     types:
