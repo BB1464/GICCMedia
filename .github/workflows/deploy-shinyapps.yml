@@ -7,7 +7,7 @@ on:
   push:
     branches: [ master ]
 env:
-  BOLT_SSH_KEY: ${{ secrets.OLUWAFEMI_OYEDELE}}
+   BOLT_SSH_KEY: ${{ secrets.OLUWAFEMI_OYEDELE}}
   workflow_run:
     workflows: ["Update data"]
     types:
