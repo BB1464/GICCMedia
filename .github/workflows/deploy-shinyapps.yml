@@ -26,7 +26,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-    super_secret: ${{ secrets.OLUWAFEMIOYEDELE }}
 
       # build the docker image and give it the name main
       - name: Build image
