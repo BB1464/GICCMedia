@@ -37,16 +37,16 @@ jobs:
         #   -e SHINY_ACC_NAME=${{secrets.SHINY_ACC_NAME }}
         #   -e TOKEN=${{secrets.TOKEN}}
         #   -e SECRET=${{secrets.SECRET}}
-           - name: Authorize and deploy app
+      - name: Authorize and deploy app
         env:
           # Provide your app name, account name, and server to be deployed below
-              APPNAME: GICCMedia
-              ACCOUNT: oluwafemioyedele
-              SERVER: shinyapps.io # server to deploy
-        run: |
+               APPNAME: GICCMedia
+               ACCOUNT: oluwafemioyedele
+               SERVER: shinyapps.io # server to deploy
+          run: |
           rsconnect::setAccountInfo("${{ secrets.RSCONNECT_USER }}", "${{ secrets.RSCONNECT_TOKEN }}", "${{ secrets.RSCONNECT_SECRET }}")
           rsconnect::deployApp(appName = "${{ env.APPNAME }}", account = "${{ env.ACCOUNT }}", server = "${{ env.SERVER }}")
-         shell: Rscript {0}
-         master
+          shell: Rscript {0}
+          master
 
 
