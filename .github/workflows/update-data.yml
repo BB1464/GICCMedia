@@ -11,7 +11,7 @@ jobs:
   update:
     runs-on: ubuntu-latest
     env:
-      GITHUB_PAT: ${{ secrets.OLUWAFEMIOYEDELE }}
+      GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v2
 
