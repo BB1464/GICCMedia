@@ -39,3 +39,4 @@ jobs:
           -e SECRET=${{secrets.SECRET}}
           master
 
+
