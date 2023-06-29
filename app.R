@@ -49,7 +49,7 @@ ui <- navbarPage(
 
 # read in data
 #likes <- readRDS('likes.rds')
-likes <- read_excel(here::here('data.xlsx')) %>%
+likes <- read_excel('data.xlsx') %>%
   mutate(Date = rtweet:::format_date(Date),
          Date = as.Date(Date)) %>%
   group_by(Date) %>%
